@@ -1,0 +1,7 @@
+[
+  {
+    "name": "Name the cert here",
+    "path": "/absolute/path/to/the/cert/file.pem",
+    "remark": "Put remarks here"
+  }
+]
