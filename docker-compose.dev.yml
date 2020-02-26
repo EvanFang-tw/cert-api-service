@@ -1,0 +1,15 @@
+version: "3"
+services:
+  cert-api-service:
+    image: node:8.17.0-alpine
+    container_name: cert-api-service
+    tty: true
+    environment:
+      - PORT=3000
+    working_dir: /home/app
+    volumes:
+      - ./:/home/app
+      # Put cert need to be watched in volume
+      - ./certs/cert.pem:/home/certs/cert.pem
+    ports:
+      - 3333:3000
